@@ -1,0 +1,41 @@
+<view class="page">
+  <view class='weui-artical'>
+    <view>
+      <view class="page__title__exp"  >原始图像示例 </view>
+      <image src='/static/images/exp/g.png' mode='widthFix' class="image-inside"></image>
+    </view>
+    <view>
+      <view class="page__title__exp">检测识别示例</view>
+      <image src='/static/images/exp/g_box.png' mode='widthFix' class="image-inside"></image>
+    </view>
+    <view>
+       <view class="page__title__exp">检测识别示例</view>
+       <view class="weui-grids">
+          <view  class="weui-grid grid__exp" hover-class="weui-grid_active">
+            <image class='weui-grid__icon weui-grid__exp' src='/static/images/exp/g1.png' mode=""/>
+          </view>
+          <view  class="weui-grid grid__exp" hover-class="weui-grid_active">
+            <image class='weui-grid__icon weui-grid__exp' src='/static/images/exp/g2.png' mode=""/>
+          </view>
+          <view  class="weui-grid grid__exp" hover-class="weui-grid_active">
+            <image class='weui-grid__icon weui-grid__exp' src='/static/images/exp/g3.png' mode=""/>
+          </view>
+          <view  class="weui-grid grid__exp" hover-class="weui-grid_active">
+            <image class='weui-grid__icon weui-grid__exp' src='/static/images/exp/g4.png' mode=""/>  <!--显示四个头像-->
+          </view>
+       </view>
+                <view>
+                  <progress percent='99' show-info />
+                </view>
+    </view>
+                  <view class="page-body-info">            
+                    <block>
+                        <view class='image-plus image-plus-nb'>
+                            <view class='image-plus-horizontal'></view>   <!--画一条竖线-->
+                            <view class='image-plus-vertical '></view>   <!--画一条横线-->
+                        </view>
+                            <view class='image-plus-text'>上传图片并识别</view>
+                     </block>
+                  </view>
+  </view>
+</view>
