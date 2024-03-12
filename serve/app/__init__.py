@@ -16,8 +16,7 @@ class CustomApplication(tornado.web.Application):#自定义应用
     def __init__(self,urls,configs):
         settings = configs
         handlers = urls
-        self.md = MongoClient(host=mongodb_configs['db_host'],
-                              port=mongodb_configs['db_port'])
+        self.md = MongoClient(host=mongodb_configs['db_host'], port=mongodb_configs['db_port'])
         super(CustomApplication, self).__init__(handlers=handlers,**settings)
 
 def create_server():  #创建服务

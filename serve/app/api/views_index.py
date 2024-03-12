@@ -1,6 +1,6 @@
-import time
-import tornado.gen
 import tornado.concurrent
+import tornado.gen
+
 from app.api.views_common import CommonHandler
 
 
