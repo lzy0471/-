@@ -10,7 +10,7 @@ from app.urls import urls
 from pymongo import  MongoClient   #mongodb的客户端连接
 
 
-define('port',type=int,default=8003,help='运行端口') #配置服务器启动端口
+define('port',type=int,default=50000,help='运行端口') #配置服务器启动端口
 class CustomApplication(tornado.web.Application):#自定义应用
 
     def __init__(self,urls,configs):
