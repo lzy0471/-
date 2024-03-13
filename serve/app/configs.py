@@ -5,7 +5,11 @@ configs = dict(
 )
 
 #mongodb配置
-mongodb_configs = dict(
-    db_host='127.0.0.1',
-    db_port=27017
-)
+#mongodb_configs = dict(
+ #   db_host='127.0.0.1',
+  #  db_port=27017
+#)
+mongodb_configs = {
+    'db_host': '127.0.0.1',
+    'db_port': 27017
+}

@@ -13,7 +13,8 @@ class UserHandler(CommonHandler):
     # POST请求
     @tornado.gen.coroutine
     def post(self, *args, **kwargs):
-        pass
+        # 使用 yield 调用异步方法
+        yield self.post_response()
 
     # 耗时处理
     @tornado.concurrent.run_on_executor
