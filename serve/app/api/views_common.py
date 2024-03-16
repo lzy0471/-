@@ -14,6 +14,11 @@ from pymongo import MongoClient  # mongodb的客户端连接工具
 class CommonHandler(tornado.web.RequestHandler):
     executor = ThreadPoolExecutor(1000)  # 定义线程池
 
+    #前缀地址
+    @property
+    def site_url(self):
+        return 'http://127.0.0.1:8003/'
+
     # 客户端向服务器端发送的数据进行处理
     # json转化为字典
 

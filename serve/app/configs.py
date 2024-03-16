@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
+import os
+root_path = os.path.dirname(__file__)
+
 #公共配置
 configs = dict(
+    static_path=os.path.join(root_path, 'static'),
     debug=True  #开启调试模式，False是关闭
 )
 
