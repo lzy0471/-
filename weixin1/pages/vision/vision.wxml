@@ -1,0 +1,21 @@
+<view class='page'>
+  <image src='{{grids.logo}}' mode="widthFix" class="image">
+  </image>
+  <view  class="pad">  <!--内边距-->
+  <view class='page__title'>       
+    导航栏
+    </view>   
+    <view class='weui-grids'>  
+      <block wx:for="{{grids.data}}"wx:for-item="val"wx:key="menusItem"> <!--循环遍历grids数组，-->
+      <!-- 假设 grids.style 是一个包含完整样式的字符串 -->
+        <navigator style="{{grids.style}}" url="{{val.url}}" class="weui-grid" hover-class="weui-grid_active">
+         <!--宽度为二等分，url为跳转命令，class是默认样式，hover-class是鼠标悬停样式-->
+         <image class='weui-grid__icon' src="{{val.image}}" ></image>
+         <view class='weui-grid__lable'>{{val.name}}</view>
+       </navigator>
+      </block>
+    </view>
+  </view>
+</view>
+<include src='../common/foot.wxml' />
+ 

@@ -1,0 +1,82 @@
+@import 'static/style/weui.wxss';
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*自定义样式*/
+.page{        /*导航栏字体，背景颜色*/
+  font-size: 28rpx;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(255, 253, 250);
+}
+.image{       
+  width: 100%;      /**/
+}
+.page__title{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 45rpx;
+  padding: 3rpx; /*标题和下面框的上下距离*/
+}
+.weui-grid__lable{          /*导航栏文字大小位置*/
+  text-align: center;      
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.weui-grid__icon{      /*导航栏图标大小*/
+  width: 70rpx;
+  height: 50x;
+}
+.pad{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.weui-grids{
+  box-shadow: 1px 1px 10px #ccc; /*阴影*/
+}
+.weui-footer{                /*产权字符*/
+  margin-top: 15rpx;
+  
+}
+.page__title__exp{  /*人脸识别页面标题*/
+  text-align:left;
+  padding:20rpx;
+  font-weight: bold;
+  
+}
+.grid__exp{
+  width:25%      /*检测图像示例宽度为1/4屏*/
+}
+.weui-grid__exp{
+  width:100rpx;
+  height: 100rpx;
+  text-align:center;  /*调节示例图片大小位置*/
+}
+.page__title__about{
+  font-size: 38rpx;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align:center;
+  padding:10prx;
+  font-weight: bold;
+}
+.page__title__about2{
+  font-size: 30rpx;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(255, 255, 255);
+  text-align:left;
+  padding: 20rpx;
+  font-weight:lighter;
+  box-shadow: 1px 1px 8px #ccc;
+  margin-bottom:12rpx;
+}
+.qrcode-card{
+  border: none;
+}
+ 

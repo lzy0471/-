@@ -1,0 +1,17 @@
+{
+  "pages": [
+   
+    "pages/index/index",
+    "pages/about/about",
+    "pages/match/match",
+    "pages/vision/vision",
+    "pages/common/foot"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "人脸识别助手",
+    "navigationBarBackgroundColor": "#093331",
+    "backgroundTextStyle": "light"
+  }
+}

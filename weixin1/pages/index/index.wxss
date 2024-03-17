@@ -1,0 +1,33 @@
+.container{
+    position: fixed;
+    height:100%;
+    width:100%;   /*背景填充宽度高度，位置*/
+    background: linear-gradient(#004dff,#ceddff);   /*背景渐变颜色*/
+}
+.header image {         /*头像大小*/
+  width: 200rpx;
+  height: 200rpx;
+}
+.header{                 /*头像和下面字的距离*/
+  text-align: center;
+  line-height: 250rpx;
+}
+.content{
+  text-align:center    /*下面字的位置*/
+}
+.content view{         /*第一行文字的大小，加粗*/
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.content text{         /*第二行文字大大小，颜色等*/
+  display:block;
+  color: #d4d3d3;
+  font-size:32rpx;
+  margin-top:40rpx;
+  font-weight:lighter;
+}
+.btn-login{                 /*登录按钮的圆角半径，字体大小，跟上面的距离*/
+  border-radius: 60rpx;
+  font-size: 40rpx;
+  margin: 130rpx 0rpx;
+}
