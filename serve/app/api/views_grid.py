@@ -14,37 +14,37 @@ class GridHandler(CommonHandler):
     def get_response(self):
         grid = {
             'style': 'width:50%',
-            'logo': self.site_url + 'static/images/background.png',  # 这里缺少了逗号
+            'logo': self.site_url + '/static/images/background.png',
             'name': '导航栏',
             'data': [
                 {
                     'name': '人脸检测',
-                    'image': self.site_url + 'static/images/g1-1.png',  # 这里也缺少了逗号
-                    'url': '/pages/match/match?cate=1'
+                    'image': self.site_url + '/static/images/g1-1.png',
+                    'url': '/pages/match/match?cate=1&uuid='
                 },
                 {
                     'name': '人脸勾勒',
-                    'image': self.site_url + 'static/images/g1-2.png',  # 这里也缺少了逗号
-                    'url': '/pages/match/match?cate=2'
+                    'image': self.site_url + '/static/images/g1-2.png',
+                    'url': '/pages/match/match?cate=2&uuid='
                 },
                 {
                     'name': '人脸截取',
-                    'image': self.site_url + 'static/images/g1-3.png',  # 这里也缺少了逗号
-                    'url': '/pages/match/match?cate=3'
+                    'image': self.site_url + '/static/images/g1-3.png',
+                    'url': '/pages/match/match?cate=3&uuid='
                 },
                 {
                     'name': '人脸化妆',
-                    'image': self.site_url + 'static/images/g1-4.png',  # 这里也缺少了逗号
-                    'url': '/pages/match/match?cate=4'
+                    'image': self.site_url + '/static/images/g1-4.png',
+                    'url': '/pages/match/match?cate=4&uuid='
                 },
                 {
                     'name': '人脸特征',
-                    'image': self.site_url + 'static/images/g1-5.png',  # 这里也缺少了逗号
-                    'url': '/pages/match/match?cate=5'
+                    'image': self.site_url + '/static/images/g1-5.png',
+                    'url': '/pages/match/match?cate=5&uuid='
                 },
                 {
                     'name': '关于作者',
-                    'image': self.site_url + 'static/images/g1-6.png',  # 这里也缺少了逗号
+                    'image': self.site_url + '/static/images/g1-6.png',
                     'url': '/pages/about/about'
                 },
             ]

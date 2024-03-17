@@ -89,7 +89,7 @@ class Face:
         return [filename]
 
     # 2.人脸勾勒
-    def face_sence(self):
+    def face_sense(self):
         # 获取图像和人脸特征
         fece_landmarks_list, image = self.get_face_landmarks()
         # 定义获取脸部特征列表
