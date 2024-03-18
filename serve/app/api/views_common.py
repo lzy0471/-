@@ -8,7 +8,7 @@ import tornado.web
 from app.common.ip2Addr import ip2addr
 from app.configs import mongodb_configs
 from pymongo import MongoClient  # mongodb的客户端连接工具
-
+from werkzeug.datastructures import MultiDict
 
 
 class CommonHandler(tornado.web.RequestHandler):
@@ -62,3 +62,23 @@ class CommonHandler(tornado.web.RequestHandler):
             headers=dict(self.request.headers)
         )
         return data
+    #ajax异步提交数据
+    @property
+    def ajax_params(self):
+        data = self.request.arguments
+        data = {
+            k:list(
+                map(
+                    lambda val:str(
+                        val,encoding='utf-8'
+                    ),
+                    v
+                )
+            )
+            for k, v in data.items()
+        }
+        return data
+    #表单数据
+    @property
+    def form_params(self):
+        return MultiDict(self.ajax_params)

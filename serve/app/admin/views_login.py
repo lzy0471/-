@@ -2,11 +2,12 @@
 import tornado.gen
 import tornado.concurrent
 from app.admin.views_admin import AdminHandler
-class IndexHandler(AdminHandler):
+#登录视图
+class LoginHandler(AdminHandler):
     @tornado.gen.coroutine
-    def get(self,*args,**kwargs):
-        #self.write("<h1 style='color:#8b8b8b'>这是后台管理系统！</h1>")
+    def get(self, *args, **kwargs):
         yield self.get_response()
+
     @tornado.concurrent.run_on_executor
     def get_response(self):
-        self.html('admin/index.html')
+        self.html('admin/login.html')
